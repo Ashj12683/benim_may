@@ -148,6 +148,7 @@ bottom: auto;
 
 footer ul li {
     list-style: none;
+    padding: 5px;
 }
 
 .cstm-icn img {
@@ -576,12 +577,24 @@ aside .btn-check:focus+.btn,
         overflow: visible !important;
         -webkit-transform: translate3d(0,0,0);
     }
-    .owl-prev{
-font-size: 15px;
+    .owl-prev span{
+        font-size: 25px;
+        border: 1px solid #c1c1c1;
+        border-radius: 5%;
+        padding: 4px 10px 8px;
+        margin: 20px 10px;
+        line-height: 10px;
+        float: left;
     }
-    owl-next
+   .owl-next span
     {
-        font-size: 15px;
+        font-size: 25px;
+        border: 1px solid #c1c1c1;
+        border-radius: 5%;
+        padding: 4px 10px 8px;
+        margin: 20px 10px;
+        line-height: 10px;
+        float: left;
     }
 }
 
