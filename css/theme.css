@@ -86,23 +86,52 @@
     top: 30%;
     left: 10%;
 }
+.item h4
+{margin-top: 20px;}
 
 .cust-testi {
     border-radius: 50%;
-    position: relative;
-    top: -55px;
-    text-align: center;
-    left: 8%;
-    width: auto;
-    border: 1px solid #eee;
-    margin-bottom: -35px;
-    z-index: 999;
+position: relative;
+top: 1px;
+text-align: center;
+left: 50%;
+width: auto;
+border: 1px solid #eee;
+z-index: 999;
+bottom: auto;
 }
 
 .custom-form-centered {
     margin: 0 auto;
     width: 700px;
 }
+
+.product-gallery-thumblist-item {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: .625rem;
+    transition: border-color .2s ease-in-out;
+    border: 1px solid #e3e9ef;
+      border-top-color: rgb(227, 233, 239);
+      border-right-color: rgb(227, 233, 239);
+      border-bottom-color: rgb(227, 233, 239);
+      border-left-color: rgb(227, 233, 239);
+    border-radius: .3125rem;
+    text-decoration: none !important;
+    overflow: hidden;
+    float: left;
+  }
+  .cust-nv  {
+    width: 100%;
+    -webkit-animation: navbar-show .25s;
+    animation: navbar-show .25s;
+    box-shadow: 0 .25rem .5625rem -0.0625rem rgba(34, 13, 13, 0.03),0 .275rem 1.25rem -0.0625rem rgba(0,0,0,.05);
+    z-index: 1030;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+  }
 
 .custom-form-centered input {
     width: 30%;
@@ -333,7 +362,7 @@ aside .btn-group,
 }
 
 .item {
-    align-items: center;
+    align-items: last baseline;
     color: white;
     display: flex;
     height: auto;
@@ -387,7 +416,7 @@ aside .btn-check:focus+.btn,
     color: #fff;
     /* background-image: url('../images/buy_ban.jpeg'); */
     background-repeat: no-repeat;
-    height: 300px;
+    height: auto;
     background-position: center center;
     background-origin: content-box;
     background-size: contain;
@@ -397,13 +426,24 @@ aside .btn-check:focus+.btn,
     top: 65px !important;
 }
 
+
+
 /* responsive */
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .cst-dv {
         max-width: 100% !important;
     }
-
+    .mob-txt .mob-cnt
+    {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        float: left;
+        position: relative;
+        padding: 5px 0px;
+    }
     .cust-nv ul.m-link {
         position: absolute;
         top: 33px;
@@ -501,9 +541,49 @@ aside .btn-check:focus+.btn,
     }
    .carousel-caption
    {display: none;}
-
+   .rect-bg {
+    background-color: #636B82;
+    color: #fff;
+    /* background-image: url('../images/buy_ban.jpeg'); */
+    background-repeat: no-repeat;
+    height: auto;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: contain;
+    width: 100%;
+    margin: 0;
+   }
+   .mob-txt, .mob-txt h2, .mob-txt .btn
+   {
+    text-align: center;
+    float: none !important;
+    width: 100%;
+    margin: 0 auto;
+   }
+   .cust-testi {
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    text-align: center;
+    left: 40%;
+    width: auto !important;
+    border: 1px solid #eee;
+    z-index: 999;
+    bottom: auto;
+    }
+    .owl-carousel .owl-stage-outer {
+        position: relative;
+        overflow: visible !important;
+        -webkit-transform: translate3d(0,0,0);
+    }
+    .owl-prev{
+font-size: 15px;
+    }
+    owl-next
+    {
+        font-size: 15px;
+    }
 }
-
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
