@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    300: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar cust-nv navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand bc-logo" href="#">
+                <img class="img-Bc-log"
+                    src="https://benimcars.com/wp-content/uploads/2021/08/benim-car_logo_black_website.png" alt=""
+                    width="156" height="75" />
+            </a>
+            <ul class="m-link">
+                <li><a href="index.html">Sell Car</a></li> | <li><a href="buy-car.html">Buy Car</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto sr-nav">
+                <a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="images/Vector(3).png" class="d-block w-20 img-fluid mt-2" alt="..." width="18"
+                        height="18" />
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
+                    <form class="input-group">
+                        <input class="form-control border-success" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn btn-success m-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <li class="nav-item cnt-n">
+                    <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i> +1(914)288-6041</a>
+                </li>
+                <li class="nav-item dropdown mobile-menu dropdown-end">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/menu-app.png" class="d-block mobile-icn float-end img-fluid pt-1" alt="tel"
+                            width="24" height="17" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Register/Login</a></li>
+                        <li><a class="dropdown-item" href="#">Buy</a></li>
+                        <li><a class="dropdown-item" href="#">Sell</a></li>
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container pt-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active custom-main_slid">
+                    <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
+                        style="width: 800px; height: 400px" />
+                    <div class="carousel-caption text-start text-dark">
+                        <h5>
+                            Sell your car in <span class="text-danger">30</span> minutes
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <h6>Call us now : <b>878-9671-4455</b></h6>
+                        <!-- <h3>Sell your car in 30 minutes</h3>
+                    <p>We love the Big Apple!</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item custom-main_slid">
+                    <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
+                        style="width: 800px; height: 400px" />
+                    <div class="carousel-caption text-start text-dark">
+                        <h5>
+                            Sell your car in <span class="text-danger">30</span> minutes
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item custom-main_slid">
+                    <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
+                        style="width: 800px; height: 400px" />
+                    <div class="carousel-caption text-start text-dark">
+                        <h5>
+                            Sell your car in <span class="text-danger">30</span> minutes
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="justify-content-center">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home">Sell</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">Buy</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content shadow sect">
+                <div id="home" class="container tab-pane active p-0">
+                    <br />
+                    <form>
+                        <div class="row px-5">
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Make</label>
+                                        <select class="form-select">
+                                            <option>Select Make</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Model</label>
+                                        <select class="form-select">
+                                            <option>Select Model</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Variant</label>
+                                        <select class="form-select">
+                                            <option>Select Variant</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Year</label>
+                                        <select class="form-select">
+                                            <option>Select Year</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Registration</label>
+                                        <select class="form-select">
+                                            <option>Select</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <hr class="hr-light my-2">
+                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Owner</label>
+                                        <select class="form-select">
+                                            <option>Select Onwer</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">KM-Driven</label>
+                                        <select class="form-select">
+                                            <option>Select KM</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Phone Number</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 p-3 m-st">
+                                        <label class="form-label font-weight-bold custb">Note</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Note">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="submit" class="w-70 btn btn-dark cst-btn shadow">Sell A car</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="bg-light p-2 text-center text-muted rounded mt-0">
+                        <div class="cstm-icn txt-note">
+                            <span> <img src="images/icn1.jpeg" alt="free" class="d-block"
+                                    style="width: 25px; height: 32px" /></span>
+                            Free Door-Step Inspection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="cstm-icn txt-note"><span></span> <img src="images/icn1.jpeg" alt="free"
+                                class="d-block float-start" style="width: 25px; height: 32px" /></span>
+                            <span> Unbeatable Offer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </div>
+                        <div class="cstm-icn txt-note"><span><img src="images/icn1.jpeg" alt="free"
+                                    class="d-block float-start" style="width: 25px; height: 32px" /></span>
+                            <span> No Hidden Charges &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </div>
+                        <div class="cstm-icn txt-note"><span> <img src="images/icn1.jpeg" alt="free"
+                                    class="d-block float-start" style="width: 25px; height: 32px" /></span>
+                            <span>Instant & Secure Instant Payment</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu1" class="container tab-pane fade">
+                    <br />
+                    <h3>Menu 1</h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+            <div id="menu1" class="container tab-pane fade">
+                <br />
+                <h3>Menu 1</h3>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+         </div>
+    </div>
+</div>
+        <div class="bg-light text-center text-muted text-center">
+            <div class="container">
+                <div class="row cust-sp-free">
+            <div class="shadow-sm cust-sp-free bg-light rounded">
+                     Free Door-Step Inspection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-star-fill"></i> Unbeatable Offer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-star-fill"></i> No Hidden Charges &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-star-fill"></i> Instant & Secure Instant Payment
+                </div></div></div></div> -->
+
+
+
+    <div class="text-center text-muted">
+
+        <div class="container">
+            <div class="row">
+                <img src="images/circles_top.svg" class="semi-circle-img text-center w-20" height="184"
+                    alt="best deal" />
+                <h2 class="text-center title-cnt">Why choose us?</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 p-5 float-start">
+                    <img src="images/Union.png" class="text-center w-20 pb-3" alt="best deal" />
+                    <h6>Maintain your Privacy</h6>
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="col-sm-4 p-5 shadow rounded-3 cst-dv">
+                    <!-- <div class="cst-d"> -->
+                    <img src="images/why1.png" class="text-center w-20 pb-3" alt="best deal" />
+                    <img src="images/tick.png" class="cust-overlap w-20 pb-3" alt="best deal" />
+                    <img src="images/lock.png" class="text-center w-20 pb-3" alt="best deal" />
+                    <h6>Maintain your Privacy</h6>
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,</p>
+                    <!-- </div> -->
+                </div>
+                <div class="col-sm-4 p-5 bl-wch">
+                    <img src="images/fast.png" class="text-center w-20 pb-3" alt="best deal" />
+                    <h6>Fast And Secure Instant Payment</h6>
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 p-5 bl-wch">
+                    <img src="images/Union(1).png" class="text-center w-20 pb-3" alt="best deal" />
+                    <h6>No Hidden Charges</h6>
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="col-sm-4 p-5 bl-wch">
+                    <img src="images/Vector(8).png" class="text-center w-20 pb-3" alt="best deal" />
+                    <h6>Unbeatable Offer Compared To Market</h6>
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="col-sm-4 p-5 bl-wch">
+                    <img src="images/hassel.png" class="text-center w-20 pb-3" alt="best deal" />
+                    <h6>Hasle-Free RC Transfer</h6>
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <div class="d-sm-flex align-items-center justify-content-between mb-3 mb-sm-4 pb-2">
+            <h2 class="text-dark mb-3 mb-sm-0">Buy Suitable Cars</h2>
+            <div class="d-flex align-items-center">
+
+                <img src="images/Vector(4).png" alt="prev"
+                    class="d-block float-end w-0 bg-danger rounded-circle py-1 px-2 mx-2" />
+                <img src="images/Vector(5).png" alt="next"
+                    class="d-block float-end w-30 btnlight rounded-circle py-1 px-2 mx-2" />
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 pt-3">
+                <div class="card shadow rounded-lg" style="width: auto;">
+                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Used Kia 5000</h4>
+                        <h6 class="text-danger">Rs. 600000</h6>
+                        <div class="row text-center text-muted">
+                            <div class="col">
+                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                <p>1000 mi</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                <p>25Km</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pt-3">
+                <div class="card shadow rounded-lg" style="width: auto;">
+                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Used Kia 5000</h4>
+                        <h6 class="text-danger">Rs. 600000</h6>
+                        <div class="row text-center text-muted">
+                            <div class="col">
+                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                <p>1000 mi</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                <p>25Km</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pt-3">
+                <div class="card shadow rounded-lg" style="width: auto;">
+                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Used Kia 5000</h4>
+                        <h6 class="text-danger">Rs. 600000</h6>
+                        <div class="row text-center text-muted">
+                            <div class="col">
+                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                <p>1000 mi</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                <p>25Km</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pt-3">
+                <div class="card shadow rounded-lg" style="width: auto;">
+                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Used Kia 5000</h4>
+                        <h6 class="text-danger">Rs. 600000</h6>
+                        <div class="row text-center text-muted">
+                            <div class="col">
+                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                <p>1000 mi</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                <p>25Km</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center m-3">
+            <button class="btn btn-dark rounded-pill text-center">Show More</button>
+        </div>
+
+    </div>
+
+    <div class="container text-center rounded-3 overflow-hidden bg-cus">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="align-self-center ps-2 text-sm-center pt-5">
+                    <h2>Selling or Buying Car</h2>
+                    <p>Book appointment for free!</p>
+                    <div class="col ms-auto">
+                        <form class="row justify-content-evenly">
+                            <div class="custom-form-centered">
+                                <div class="col-auto">
+                                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                                    <input type="text" class="form-control" id="staticEmail2" value="email@example.com">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="inputPassword2" class="visually-hidden">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword2"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-danger mb-3 mt-2">Confirm identity</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="p-2 text-center text-white">
+                    <div class="cstm-icon txt-note text-white">
+                        <span> <img src="images/free-ic.png" alt="free" class="d-block"
+                                style="width: 29px;height: 25px;margin: 5px 15px 10px 0px;" /></span>
+                        Free Door-Step Inspection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="cstm-icon txt-note text-white">
+                        <span> <img src="images/maint.png" alt="free" class="d-block"
+                                style="width: 29px;height: 25px;margin: 5px 15px 10px 0px;" /></span>
+                        Free Door-Step Inspection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="cstm-icon txt-note text-white">
+                        <span> <img src="images/no-h.png" alt="free" class="d-block"
+                                style="width: 29px;height: 25px;margin: 5px 15px 10px 0px;" /></span>
+                        Free Door-Step Inspection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <!-- <div class="cstm-icon text-note text-white">
+                        <span> <img src="images/no-h.png" alt="free" class="d-block"
+                                style="width: 46px; height: 46px" /></span>
+                        No Hidden Charges &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--testi start-->
+    <section id="demos">
+        <div class="container pt-5 text-center">
+            <h2 style="text-align: left;margin-bottom: 25px;">Customer Testimonal</h2>
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="images/a-1.png" class="card-img-top cust-testi shadow" width="78" height="78"
+                                alt="...">
+                            <div class="card shadow rounded-lg" style="width: auto;">
+                                <div class="card-body bg-light rounded">
+                                    <h4>Shah Rukh Khan</h4>
+                                    <h6 class="text-muted"><i class="text-danger bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s,</p>
+                                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                        class="card-img-top shadow" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/a-1.png" class="card-img-top cust-testi shadow" width="78" height="78"
+                                alt="...">
+                            <div class="card shadow rounded-lg" style="width: auto;">
+                                <div class="card-body bg-light rounded">
+                                    <h4>Shah Rukh Khan</h4>
+                                    <h6 class="text-muted"><i class="text-danger bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s,</p>
+                                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                        class="card-img-top shadow" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/a-1.png" class="card-img-top cust-testi shadow" width="78" height="78"
+                                alt="...">
+                            <div class="card shadow rounded-lg" style="width: auto;">
+                                <div class="card-body bg-light rounded">
+                                    <h4>Shah Rukh Khan</h4>
+                                    <h6 class="text-muted"><i class="text-danger bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s,</p>
+                                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                        class="card-img-top shadow" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/a-1.png" class="card-img-top cust-testi shadow" width="78" height="78"
+                                alt="...">
+                            <div class="card shadow rounded-lg" style="width: auto;">
+                                <div class="card-body bg-light rounded">
+                                    <h4>Shah Rukh Khan</h4>
+                                    <h6 class="text-muted"><i class="text-danger bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s,</p>
+                                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                        class="card-img-top shadow" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/a-1.png" class="card-img-top cust-testi shadow" width="78" height="78"
+                                alt="...">
+                            <div class="card shadow rounded-lg" style="width: auto;">
+                                <div class="card-body bg-light rounded">
+                                    <h4>Shah Rukh Khan</h4>
+                                    <h6 class="text-muted"><i class="text-danger bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s,</p>
+                                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                        class="card-img-top shadow" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/a-1.png" class="card-img-top cust-testi shadow" width="78" height="78"
+                                alt="...">
+                            <div class="card shadow rounded-lg" style="width: auto;">
+                                <div class="card-body bg-light rounded">
+                                    <h4>Shah Rukh Khan</h4>
+                                    <h6 class="text-muted"><i class="text-danger bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s,</p>
+                                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                        class="card-img-top shadow" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/a-1.png" class="card-img-top cust-testi shadow" width="78" height="78"
+                                alt="...">
+                            <div class="card shadow rounded-lg" style="width: auto;">
+                                <div class="card-body bg-light rounded">
+                                    <h4>Shah Rukh Khan</h4>
+                                    <h6 class="text-muted"><i class="text-danger bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s,</p>
+                                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                        class="card-img-top shadow" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="cus-accor py-5">
+        <div class="container">
+            <h2 class="fw-bold" style="text-align: left">
+                FAQ
+            </h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item vc_togge border mb-3">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    What is the eligibility for selling my car on Benim Cars?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    enim Cars offers 100% FREE and instant car valuation and
+                                    inspection. We at Benim Cars, do not stop here after
+                                    providing you a fair value for your car. We GUARANTEE to
+                                    sell your car within 30 minutes. We pay you instantly and
+                                    take care of all the paperwork without any hassle.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item vc_togge border mb-3">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    What is the eligibility for selling my car on Benim Cars?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    enim Cars offers 100% FREE and instant car valuation and
+                                    inspection. We at Benim Cars, do not stop here after
+                                    providing you a fair value for your car. We GUARANTEE to
+                                    sell your car within 30 minutes. We pay you instantly and
+                                    take care of all the paperwork without any hassle.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item vc_togge border mb-3">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    What is the eligibility for selling my car on Benim Cars?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    enim Cars offers 100% FREE and instant car valuation and
+                                    inspection. We at Benim Cars, do not stop here after
+                                    providing you a fair value for your car. We GUARANTEE to
+                                    sell your car within 30 minutes. We pay you instantly and
+                                    take care of all the paperwork without any hassle.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item vc_togge border mb-3">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                    aria-controls="flush-collapseEight">
+                                    What is the eligibility for selling my car on Benim Cars?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    enim Cars offers 100% FREE and instant car valuation and
+                                    inspection. We at Benim Cars, do not stop here after
+                                    providing you a fair value for your car. We GUARANTEE to
+                                    sell your car within 30 minutes. We pay you instantly and
+                                    take care of all the paperwork without any hassle.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item vc_togge border mb-3">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                    aria-controls="flush-collapseSeven">
+                                    What is the eligibility for selling my car on Benim Cars?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    enim Cars offers 100% FREE and instant car valuation and
+                                    inspection. We at Benim Cars, do not stop here after
+                                    providing you a fair value for your car. We GUARANTEE to
+                                    sell your car within 30 minutes. We pay you instantly and
+                                    take care of all the paperwork without any hassle.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item vc_togge border mb-3">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    What is the eligibility for selling my car on Benim Cars?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    enim Cars offers 100% FREE and instant car valuation and
+                                    inspection. We at Benim Cars, do not stop here after
+                                    providing you a fair value for your car. We GUARANTEE to
+                                    sell your car within 30 minutes. We pay you instantly and
+                                    take care of all the paperwork without any hassle.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-black mt-5 pt-5">
+        <div class="container text-white">
+            <footer class="row pb-4">
+                <div class="col-sm-4">
+                    <img src="https://benimcars.herokuapp.com/frontend-assets/images/logo1.png" alt="" width="156"
+                        height="76" style="margin-bottom: 20px;" />
+                    <p class="pt-3">Benim Cars offers 100% FREE and instant car valuation and inspection. We at Benim
+                        Cars, do not
+                        stop here after providing you a fair value for your car. We GUARANTEE to sell your car within 30
+                        minutes. We pay you instantly and take care of all the paperwork without any hassle.</p>
+                </div>
+                <div class="col-sm-6">
+                    <h5>Popular Brands</h5>
+                    <p class="pt-3">Chevrolet: Beat | Ford: Figo | Honda: City | Hyundai: Elite-i10 / i20 |
+                        Maruti-Suzuki:800/ Alto | Tata: indica-V2 / Indica-Vista | Toyota: Etios</p>
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>About us</li>
+                                <li>Contact Us</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+
+                                <li>Terms of service</li>
+                                <li>Refund Policy</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <p class="pt-3">
+                        <i class="bi bi-facebook" style="font-size: 35px;"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-twitter" style="font-size: 35px;"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-instagram" style="font-size: 35px;"></i>
+                    </p>
+                    <p>+1(914)288-6041</p>
+                </div>
+        </div>
+        <hr class="hr-gray my-0" />
+        <div class="container text-center border-top border-dark py-4">
+            <span class="tg text-muted">Copyright © 2022. Benim Cars. All rights reserved.</span>
+        </div>
+        </footer>
+    </div>
+    </div>
+    <script src="js/owl.carousel.js"></script>
+
+</body>
+
+</html>
