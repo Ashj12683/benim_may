@@ -1,3 +1,8 @@
+body{
+    width:100%;
+    margin: 0 auto;
+}
+
 @font-face {
     font-family: Roboto-Light-Light;
     src: url('font/Roboto-Light.ttf');
@@ -92,13 +97,36 @@
 .cust-testi {
     border-radius: 50%;
 position: relative;
-top: 1px;
+top: 25px;
 text-align: center;
-left: 50%;
+left: 35%;
 width: auto;
 border: 1px solid #eee;
 z-index: 999;
 bottom: auto;
+width: 25% !important;
+}
+
+.cl-3 .card
+{
+    border: 0px solid rgba(0,0,0,.125) !important;
+}
+.testimonal .owl-carousel .owl-nav button.owl-next, .testimonal .owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    background: red;
+    margin: 5px 10px;
+    border-radius: 50%;
+    width: 35px;
+    padding: 0px 17px 5px 12px !important;
+    color: #fff;
+    font-size: 33px;
+    line-height: 27px;
 }
 
 .custom-form-centered {
@@ -226,6 +254,22 @@ footer ul li {
     max-width: 25%;
 }
 
+aside .accordion-button::after {
+    transform: rotate(-86deg);
+}
+aside .accordion-body ul
+{
+
+}
+
+aside .list-group-item {
+    min-width: 96px;
+    margin: 0;
+    padding: 8px;
+}
+
+.testimonal
+{overflow: hidden;}
 /* .banner-add
 {
     background-color: #636B82;
@@ -363,11 +407,13 @@ aside .btn-group,
 }
 
 .item {
-    align-items: last baseline;
+    align-items: center;
     color: white;
-    display: flex;
+    display: block;
     height: auto;
     justify-content: center;
+    overflow: hidden;
+    width: 100%;
 }
 
 .item h4,
@@ -579,22 +625,22 @@ aside .btn-check:focus+.btn,
     }
     .owl-prev span{
         font-size: 25px;
-        border: 1px solid #c1c1c1;
-        border-radius: 5%;
-        padding: 4px 10px 8px;
-        margin: 20px 10px;
-        line-height: 10px;
-        float: left;
+border: 0px solid #c1c1c1;
+border-radius: 5%;
+padding: 4px -5px 8px;
+margin: 8px 0px;
+line-height: 10px;
+float: left;
     }
    .owl-next span
     {
         font-size: 25px;
-        border: 1px solid #c1c1c1;
-        border-radius: 5%;
-        padding: 4px 10px 8px;
-        margin: 20px 10px;
-        line-height: 10px;
-        float: left;
+border: 0px solid #c1c1c1;
+border-radius: 5%;
+padding: 4px 13px 8px;
+margin: 5px -11px -1px;
+line-height: 10px;
+float: left;
     }
 }
 
