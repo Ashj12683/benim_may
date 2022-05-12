@@ -15,8 +15,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+       // $.noConflict();
         $(document).ready(function () {
-            var owl = $('.owl-carousel');
+            var owl = $('.testimonal .owl-carousel');
             owl.owlCarousel({
                 margin: 10,
                 nav: true,
@@ -34,6 +35,21 @@
                 }
             })
         })
+    </script>
+    <script>
+         $(document).ready(function () {
+        var owl = $('.prd-slider .owl-carousel');
+        owl.owlCarousel({
+            items:4, 
+        // items change number for slider display on desktop
+        nav: true,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true
+        });
+    })
     </script>
 </head>
 
@@ -82,14 +98,15 @@
             </ul>
         </div>
     </nav>
+    <section class="main-slider">
     <div class="container pt-5">
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators/dots -->
-            <div class="carousel-indicators">
+            <!-- <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
+            </div> -->
 
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
@@ -97,14 +114,46 @@
                     <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
                         style="width: 800px; height: 400px" />
                     <div class="carousel-caption text-start text-dark">
-                        <h5>
+                        <h1>
                             Sell your car in <span class="text-danger">30</span> minutes
-                        </h5>
+                        </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <h6>Call us now : <b>878-9671-4455</b></h6>
+                        <h6><span class="text-muted font-weight-normal">Call us now</span> : <b>878-9671-4455</b></h6>
+                        <!-- <h3>Sell your car in 30 minutes</h3>
+                    <p>We love the Big Apple!</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item active custom-main_slid">
+                    <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
+                        style="width: 800px; height: 400px" />
+                    <div class="carousel-caption text-start text-dark">
+                        <h1>
+                            Sell your car in <span class="text-danger">30</span> minutes
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <h6><span class="text-muted font-weight-normal">Call us now</span> : <b>878-9671-4455</b></h6>
+                        <!-- <h3>Sell your car in 30 minutes</h3>
+                    <p>We love the Big Apple!</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item active custom-main_slid">
+                    <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
+                        style="width: 800px; height: 400px" />
+                    <div class="carousel-caption text-start text-dark">
+                        <h1>
+                            Sell your car in <span class="text-danger">30</span> minutes
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <h6><span class="text-muted font-weight-normal">Call us now</span> : <b>878-9671-4455</b></h6>
                         <!-- <h3>Sell your car in 30 minutes</h3>
                     <p>We love the Big Apple!</p> -->
                     </div>
@@ -113,9 +162,9 @@
                     <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
                         style="width: 800px; height: 400px" />
                     <div class="carousel-caption text-start text-dark">
-                        <h5>
+                        <h1>
                             Sell your car in <span class="text-danger">30</span> minutes
-                        </h5>
+                        </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -126,9 +175,9 @@
                     <img src="images/carslid.png" alt="Los Angeles" class="img-fluid d-block float-end"
                         style="width: 800px; height: 400px" />
                     <div class="carousel-caption text-start text-dark">
-                        <h5>
+                        <h1>
                             Sell your car in <span class="text-danger">30</span> minutes
-                        </h5>
+                        </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -146,15 +195,18 @@
             </button>
         </div>
     </div>
-    <div class="container">
+    </section>
+    <section class="sel-buy_tab">
+    <div class="container px-5">
         <div class="justify-content-center">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#home">Sell</a>
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home">Sell A Car</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">Buy</a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/buy-car.html">Buy A Car</a>
+                    <!-- <a class="nav-link" data-bs-toggle="tab" href="#menu1">Buy A Car</a> -->
                 </li>
             </ul>
 
@@ -166,7 +218,7 @@
                         <div class="row px-5">
                             <div class="col-sm-10">
                                 <div class="row">
-                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Make</label>
                                         <select class="form-select">
                                             <option>Select Make</option>
@@ -175,7 +227,7 @@
                                             <option>4</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Model</label>
                                         <select class="form-select">
                                             <option>Select Model</option>
@@ -184,7 +236,7 @@
                                             <option>4</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Variant</label>
                                         <select class="form-select">
                                             <option>Select Variant</option>
@@ -193,7 +245,7 @@
                                             <option>4</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Year</label>
                                         <select class="form-select">
                                             <option>Select Year</option>
@@ -202,7 +254,7 @@
                                             <option>4</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-6 p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Registration</label>
                                         <select class="form-select">
                                             <option>Select</option>
@@ -212,7 +264,7 @@
                                         </select>
                                     </div>
                                     <hr class="hr-light my-2">
-                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Owner</label>
                                         <select class="form-select">
                                             <option>Select Onwer</option>
@@ -221,7 +273,7 @@
                                             <option>4</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">KM-Driven</label>
                                         <select class="form-select">
                                             <option>Select KM</option>
@@ -230,12 +282,13 @@
                                             <option>4</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-6 border-end p-3 m-st">
+                                    <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Phone Number</label>
                                         <input type="email" class="form-control" id="exampleFormControlInput1"
                                             placeholder="Phone Number">
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-6 p-3 m-st">
+                                    <!-- <div class="col-lg-2 col-md-3 col-sm-6 p-3 m-st"> -->
+                                        <div class="col p-3 m-st">
                                         <label class="form-label font-weight-bold custb">Note</label>
                                         <input type="email" class="form-control" id="exampleFormControlInput1"
                                             placeholder="Note">
@@ -249,32 +302,32 @@
                     </form>
                     <div class="bg-light p-2 text-center text-muted rounded mt-0">
                         <div class="cstm-icn txt-note">
-                            <span> <img src="images/icn1.jpeg" alt="free" class="d-block"
-                                    style="width: 25px; height: 32px" /></span>
+                            <span> <img src="images/Frame 13.svg" alt="free" class="d-block"
+                                    style="width: 17px;height: 24px;" /></span>
                             Free Door-Step Inspection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
-                        <div class="cstm-icn txt-note"><span></span> <img src="images/icn1.jpeg" alt="free"
-                                class="d-block float-start" style="width: 25px; height: 32px" /></span>
+                        <div class="cstm-icn txt-note"><span></span> <img src="images/Frame 13.svg" alt="free"
+                                class="d-block float-start" style="width: 17px;height: 24px;" /></span>
                             <span> Unbeatable Offer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
-                        <div class="cstm-icn txt-note"><span><img src="images/icn1.jpeg" alt="free"
-                                    class="d-block float-start" style="width: 25px; height: 32px" /></span>
+                        <div class="cstm-icn txt-note"><span><img src="images/Frame 13.svg" alt="free"
+                                    class="d-block float-start" style="width: 17px;height: 24px;" /></span>
                             <span> No Hidden Charges &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
-                        <div class="cstm-icn txt-note"><span> <img src="images/icn1.jpeg" alt="free"
-                                    class="d-block float-start" style="width: 25px; height: 32px" /></span>
+                        <div class="cstm-icn txt-note"><span> <img src="images/Frame 13.svg" alt="free"
+                                    class="d-block float-start" style="width: 17px;height: 24px;" /></span>
                             <span>Instant & Secure Instant Payment</span>
                         </div>
                     </div>
                 </div>
-                <div id="menu1" class="container tab-pane fade">
+                <!-- <div id="menu1" class="container tab-pane fade">
                     <br />
                     <h3>Menu 1</h3>
                     <p>
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -302,7 +355,7 @@
                 </div></div></div></div> -->
 
 
-
+</section>
     <div class="text-center text-muted">
 
         <div class="container">
@@ -369,121 +422,144 @@
             </div>
         </div>
     </div>
-    <div class="container pt-5">
-        <div class="d-sm-flex align-items-center justify-content-between mb-3 mb-sm-4 pb-2">
-            <h2 class="text-dark mb-3 mb-sm-0">Buy Suitable Cars</h2>
-            <div class="d-flex align-items-center">
-
-                <img src="images/Vector(4).png" alt="prev"
-                    class="d-block float-end w-0 bg-danger rounded-circle py-1 px-2 mx-2" />
-                <img src="images/Vector(5).png" alt="next"
-                    class="d-block float-end w-30 btnlight rounded-circle py-1 px-2 mx-2" />
-
+     <!----------HTML slider code starts here------->
+     <section class="prd-slider">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between mb-3 mb-sm-4 pb-2">
+                <h2 class="text-dark mb-3 mb-sm-0">Buy Suitable Cars</h2>
+                <!-- <div class="d-flex align-items-center">
+        
+                    <img src="images/Vector(4).png" alt="prev"
+                        class="d-block float-end w-0 bg-danger rounded-circle py-1 px-2 mx-2" />
+                    <img src="images/Vector(5).png" alt="next"
+                        class="d-block float-end w-30 btnlight rounded-circle py-1 px-2 mx-2" />
+        
+                </div> -->
             </div>
+        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    
+            <div class="owl-stage-outer">
+              
+              <div class="owl-stage" style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                
+                <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;"><div class="item">
+                    <div class="card shadow rounded-lg" style="width: auto;">
+                        <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Used Kia 5000</h4>
+                            <h6 class="text-danger">Rs. 600000</h6>
+                            <div class="row text-center text-muted">
+                                <div class="col">
+                                    <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                    <p>1000 mi</p>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                    <p>25Km</p>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                    <p>Petrol</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+              
+              <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;"><div class="item">
+                <div class="card shadow rounded-lg" style="width: auto;">
+                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Used Kia 5000</h4>
+                        <h6 class="text-danger">Rs. 600000</h6>
+                        <div class="row text-center text-muted">
+                            <div class="col">
+                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                <p>1000 mi</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                <p>25Km</p>
+                            </div>
+                            <div class="col">
+                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 </div></div>
+                
+                <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                    <div class="item">
+                        <div class="card shadow rounded-lg" style="width: auto;">
+                            <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Used Kia 5000</h4>
+                                <h6 class="text-danger">Rs. 600000</h6>
+                                <div class="row text-center text-muted">
+                                    <div class="col">
+                                        <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                        <p>1000 mi</p>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                        <p>25Km</p>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                        <p>Petrol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+                </div>
+                
+        
+                
+                <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                    <div class="item">
+                        
+                        <div class="card shadow rounded-lg" style="width: auto;">
+                            <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Used Kia 5000</h4>
+                                <h6 class="text-danger">Rs. 600000</h6>
+                                <div class="row text-center text-muted">
+                                    <div class="col">
+                                        <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+                                        <p>1000 mi</p>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+                                        <p>25Km</p>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+                                        <p>Petrol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 </div></div>
+                
+                </div></div><div class="owl-nav disabled">
+        
+        </div>
         </div>
         <div class="row">
-            <div class="col-sm-3 pt-3">
-                <div class="card shadow rounded-lg" style="width: auto;">
-                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4>Used Kia 5000</h4>
-                        <h6 class="text-danger">Rs. 600000</h6>
-                        <div class="row text-center text-muted">
-                            <div class="col">
-                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
-                                <p>1000 mi</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
-                                <p>25Km</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
-                                <p>Petrol</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 pt-3">
-                <div class="card shadow rounded-lg" style="width: auto;">
-                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4>Used Kia 5000</h4>
-                        <h6 class="text-danger">Rs. 600000</h6>
-                        <div class="row text-center text-muted">
-                            <div class="col">
-                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
-                                <p>1000 mi</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
-                                <p>25Km</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
-                                <p>Petrol</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 pt-3">
-                <div class="card shadow rounded-lg" style="width: auto;">
-                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4>Used Kia 5000</h4>
-                        <h6 class="text-danger">Rs. 600000</h6>
-                        <div class="row text-center text-muted">
-                            <div class="col">
-                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
-                                <p>1000 mi</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
-                                <p>25Km</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
-                                <p>Petrol</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 pt-3">
-                <div class="card shadow rounded-lg" style="width: auto;">
-                    <img src="https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o="
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4>Used Kia 5000</h4>
-                        <h6 class="text-danger">Rs. 600000</h6>
-                        <div class="row text-center text-muted">
-                            <div class="col">
-                                <i class="bi bi-speedometer" style="font-size: 30px;"></i>
-                                <p>1000 mi</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
-                                <p>25Km</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
-                                <p>Petrol</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="text-center m-3">
             <button class="btn btn-dark rounded-pill text-center">Show More</button>
         </div>
-
-    </div>
+        </div>
+        </div>
+        </section>
 
     <div class="container text-center rounded-3 overflow-hidden bg-cus">
         <div class="row">
@@ -800,6 +876,7 @@
         </div>
     </section>
 
+   
     <div class="bg-black mt-5 pt-5">
         <div class="container text-white">
             <footer class="row pb-4">
