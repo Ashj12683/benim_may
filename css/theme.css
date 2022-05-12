@@ -202,14 +202,30 @@ width: 25% !important;
     border-bottom: 0px solid #dee2e6 !important;
   }
   .sel-buy_tab .nav-item
-{ 
-    box-shadow: 0px 1px 10px 3px rgba(0,0,0,0.2);
+{ box-shadow: 2px -1px 3px 1px rgba(0,0,0,0.2);
     border-bottom: 0px solid !important;
-    border-radius: 10%;
+    border-radius: 4px 4px 0px 0px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
 /* 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important */
 }
 .sel-buy_tab ul .nav-item:nth-child(2) .nav-link
 {}
+.mob-cnt .txt-note
+{
+    line-height: 40px;
+}
+
+.tab-pane
+{
+box-shadow:  0px 1px 10px 3px rgba(0,0,0,0.2);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+    border-color: #fff !important;
+}
 
 .sel-buy_tab .nav-item a
 {padding: 10px 25px;
