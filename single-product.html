@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Buy list page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/flexslider.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  
+  
+
+  <script type="text/javascript">
+// $(window).load(function() {
+  $(document).ready(function () {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: true,
+    slideshow: true,
+    itemWidth: 210,
+    itemMargin: 25,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: true,
+    slideshow: true,
+    sync: "#carousel"
+  });
+});
+    </script>
+</head>
+
+<body>
+
+  <nav class="navbar cust-nv navbar-expand-sm navbar-light">
+    <div class="container">
+      <a class="navbar-brand bc-logo" href="#">
+        <img class="img-Bc-log" src="https://benimcars.com/wp-content/uploads/2021/08/benim-car_logo_black_website.png"
+          alt="" width="156" height="75" />
+      </a>
+      <ul class="m-link">
+        <li><a href="index.html">Sell Car</a></li> | <li><a href="buy-car.html">Buy Car</a></li>
+      </ul>
+      <ul class="navbar-nav ms-auto sr-nav">
+        <a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="images/Vector(3).png" class="d-block w-20 img-fluid mt-2" alt="..." width="18" height="18" />
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
+          <form class="input-group">
+            <input class="form-control border-success" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-success m-0" type="submit">Search</button>
+          </form>
+        </div>
+        <li class="nav-item cnt-n">
+          <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i> +1(914)288-6041</a>
+        </li>
+        <li class="nav-item dropdown mobile-menu dropdown-end">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/menu-app.png" class="d-block mobile-icn float-end img-fluid pt-2" alt="tel" width="24"
+              height="17" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Register/Login</a></li>
+            <li><a class="dropdown-item" href="#">Buy</a></li>
+            <li><a class="dropdown-item" href="#">Sell</a></li>
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">USED CARS IN PUNE</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">HYUNDAI CARS</a></li>
+            <li class="breadcrumb-item active" aria-current="page">i20-n-line CAR</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 pe-xl-5">
+<!--featured image start -->
+<!-- Place somewhere in the <body> of your page -->
+  <div id="slider" class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="images/carblue.jpg" />
+      </li>
+      <li>
+        <img src="images/carblue.jpg" />
+      </li>
+      <li>
+        <img src="images/Rectangle15.jpg" />
+      </li>
+      <li>
+        <img src="images/image3.png" />
+      </li>
+      <li>
+        <img src="images/carblue.jpg" />
+      </li>
+      <li>
+        <img src="images/Rectangle15.jpg" />
+      </li>
+      <!-- items mirrored twice, total of 12 -->
+    </ul>
+  </div>
+  <div id="carousel" class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="images/carblue.jpg" />
+      </li>
+      <li>
+        <img src="images/carblue.jpg" />
+      </li>
+      <li>
+        <img src="images/Rectangle15.jpg" />
+      </li>
+      <li>
+        <img src="images/image3.png" />
+      </li>
+      <li>
+        <img src="images/carblue.jpg" />
+      </li>
+      <li>
+        <img src="images/Rectangle15.jpg" />
+      </li>
+      <!-- items mirrored twice, total of 12 -->
+    </ul>
+  </div>
+<!--featured image end -->
+       
+
+        <div class="row inf-ov">
+          <div class="justify-content-center">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#overview">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#info">other Info</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content shadow sect">
+              <div id="overview" class="container tab-pane active">
+                <br />
+                <h3>Car Overview</h3>
+                <form>
+                  <div class="row px-5">
+                    <div class="col-sm-12">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">Make Year</span>
+                          <h6>Mar 2019</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">Registration Year</span>
+                          <h6>June 2019</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">Fuel Type</span>
+                          <h6>Petrol</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">KM Driven</span>
+                          <h6> 22,300 Kms</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">Car Location</span>
+                          <h6>ITI Layout, Pune</h6>
+                        </div>
+                       </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">Transmission</span>
+                          <h6>Automatic</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">No. of Owner</span>
+                          <h6>I st Owner</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">Insurance Validity</span>
+                          <h6>March 2023</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">Insurance Type</span>
+                          <h6>Comprehensive</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 border-end p-2 m-st">
+                          <span class="text-muted">RTO</span>
+                          <h6>MH12</h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </form>
+              </div>
+              <div id="info" class="container tab-pane fade">
+                <br />
+                <h3>Other Info</h3>
+                <p>
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="col-lg-3 br-2 float-start">
+        <div class="rpt-block border rounded shadow p-3">
+          
+          <div class="text-start m-3 cust-butn-img">
+           <button type="button" class="txt-overlp btn btn-danger text-white"> <a class="text-white text-decoration-none" href="#">Special</a></button>
+        </div>
+        <h5 class="text-black tit">Hyundai i20-n-line</h5>
+        <div class="text-danger price">₹ 2,00,000</div>
+        <div class="row text-center text-muted">
+          <div class="col">
+              <i class="bi bi-speedometer" style="font-size: 30px;"></i>
+              <p>1000 mi</p>
+          </div>
+          <div class="col">
+              <i class="bi bi-caret-down-square" style="font-size: 30px;"></i>
+              <p>25Km</p>
+          </div>
+          <div class="col">
+              <i class="bi bi-credit-card-2-front-fill" style="font-size: 30px;"></i>
+              <p>Petrol</p>
+          </div>
+          <div class="cstm-icn-pr">
+        <span><img class="float-start" src="images/cr-ic.png" alt="" width="25" height="15" /></span>
+           <span class="txt-note-pr"> Home Test Drive: <b>Available</b></span>
+          </div>
+          <div class="cstm-icn-pr">
+            <span><img class="float-start" src="images/ptr.png" alt="" width="12" height="17" /></span>
+            <span class="txt-note-pr">  Benim Cars, Mantri Mall, Pune.</span>
+              </div>
+            </div>
+          </div>
+              <div class="cust-bg-peach">
+                <span class="float-start mx-3">
+                  <img class="cust-uni" src="images/load.png" alt="" width="26" height="29" /></span>
+                  
+                  <p>Guaranteed Buyback: Return this car to us within a tenure of 6, 12 or 18 months at guaranteed prices.</p>
+      
+        </div>
+        <div class="rpt-blck rounded  my-2 py-3">
+          <span class="float-start mx-3">
+          <img class="cust-uni" src="images/Group.png" alt="" width="107" height="157" /></span>
+          
+          <p>“ We put every car through a 250 point inspection so that you can be 100% confident in the quality of the car.”</p>
+        </div>
+        <div class="rpt-block border rounded shadow px-4 pt-4">
+          <h6>Report</h6>
+          <ul>
+            <li><a class="text-black text-decoration-none" href="#">Exterior</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Interior</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Engine</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Road Test</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Underbody</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Tyre</a></li>
+            </ul>
+            <div class="text-center m-3">
+              <button type="button" class="btn btn-outline-secondary text-black">View all details</button>
+          </div>
+          </div>
+      </aside>
+    </div>
+  </div>
+
+
+  <div class="bg-black mt-5 pt-5">
+    <div class="container text-white">
+      <footer class="row pb-4">
+        <div class="col-sm-4">
+          <img src="https://benimcars.herokuapp.com/frontend-assets/images/logo1.png" alt="" width="120" height="60" />
+          <p class="pt-3">Benim Cars offers 100% FREE and instant car valuation and inspection. We at Benim
+            Cars, do not
+            stop here after providing you a fair value for your car. We GUARANTEE to sell your car within 30
+            minutes. We pay you instantly and take care of all the paperwork without any hassle.</p>
+        </div>
+        <div class="col-sm-6">
+          <h5>Popular Brands</h5>
+          <p class="pt-3">Chevrolet: Beat | Ford: Figo | Honda: City | Hyundai: Elite-i10 / i20 |
+            Maruti-Suzuki:800/ Alto | Tata: indica-V2 / Indica-Vista | Toyota: Etios</p>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li>About us</li>
+                <li>Contact Us</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+
+                <li>Terms of service</li>
+                <li>Refund Policy</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <p class="pt-3">
+            <i class="bi bi-facebook" style="font-size: 35px;"></i> &nbsp;&nbsp;&nbsp;
+            <i class="bi bi-twitter" style="font-size: 35px;"></i> &nbsp;&nbsp;&nbsp;
+            <i class="bi bi-instagram" style="font-size: 35px;"></i>
+          </p>
+          <p>+1(914)288-6041</p>
+        </div>
+    </div>
+    <hr class="hr-gray my-0" />
+    <div class="container text-center border-top border-dark py-4">
+      <span class="tg text-muted">Copyright © 2022. Benim Cars. All rights reserved.</span>
+    </div>
+    </footer>
+  </div>
+  </div>
+
+</body>
+
+</html>
