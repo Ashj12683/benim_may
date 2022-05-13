@@ -210,8 +210,7 @@ width: 25% !important;
     border-left: 1px solid #eee;
 /* 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important */
 }
-.sel-buy_tab ul .nav-item:nth-child(2) .nav-link
-{}
+
 .mob-cnt .txt-note
 {
     line-height: 40px;
@@ -234,7 +233,7 @@ box-shadow:  0px 1px 10px 3px rgba(0,0,0,0.2);
 .cust-top-sec .card
 {max-height: 430px;
 overflow: hidden;
-border: 1px solid #eee !important;
+/* border: 1px solid #eee !important; */
 }
 .product-gallery-thumblist-item {
     display: block;
@@ -291,8 +290,7 @@ border: 1px solid #eee !important;
 clip-path: polygon(2% 20%, 100% 20%, 98% 85%, 0% 85%);
 }
 
-.cust-title-inner
-{}
+
 
 footer ul li {
     list-style: none;
@@ -373,10 +371,7 @@ footer ul li {
     width: 13px;
     height: 9px;
 }
-.pt-blck
-{
 
-}
 
 .rpt-block ul{
     padding: 10px 0px;
@@ -414,14 +409,7 @@ footer ul li {
     overflow: hidden;
     min-height: 115px;
 }
-.cstm-icn-pr
-{
-    
-}
-.cstm-icn-pr span
-{
 
-}
 .cstm-icn-pr img
 {
     display: flex;
@@ -486,19 +474,6 @@ aside .list-group-item {
 {display: none;}
 .testimonal
 {overflow: hidden;}
-/* .banner-add
-{
-    background-color: #636B82;
-color: #fff;
-background-repeat: no-repeat;
-height: 300px;
-background-position: left center;
-background-origin: content-box;
-background-size: contain;
-width: 100%;
-/* background-image: url('../images/wave1.jpeg'); 
-height: 100%;
-} */
 
 /*sidebar*/
 .form-option-color {
@@ -588,19 +563,7 @@ aside .dropdown-menu {
     border-left: .3em solid;
 }
 
-/* aside .btn::after{ 
-width: 1.375rem;
-height: 1.375rem;
-padding-top: .0625rem;
-background-image: none;
-background-color: rgba(254,105,106,.1);
-font-family: "cartzilla-icons";
-font-size: .5rem;
-font-weight: bold;
-content: "";
-text-align: center;
-line-height: 1.375rem;
-} */
+
 aside button.dropdown-toggle {
     background-image: url('../images/filter_arrow.png');
     background-repeat: no-repeat;
@@ -653,8 +616,7 @@ aside .btn-group,
     min-width: 205px;
 }
 
-aside .btn-check:focus+.btn,
-.btn:focus {
+aside .btn-check:focus.btn, .btn:focus {
     outline: 0;
     box-shadow: none !important;
 }
@@ -697,6 +659,11 @@ aside .btn-check:focus+.btn,
 /* responsive */
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+    .testimonal h2[style*="margin-bottom:25px"]
+{margin-bottom: 55px !important;}
+
+
     .cst-dv {
         max-width: 100% !important;
     }
@@ -708,7 +675,7 @@ aside .btn-check:focus+.btn,
         overflow: hidden;
         float: left;
         position: relative;
-        padding: 5px 0px;
+        padding: 2px 0px;
     }
     .cust-nv ul.m-link {
         position: absolute;
@@ -790,9 +757,11 @@ aside .btn-check:focus+.btn,
     }
 
     .sect .m-st {
-        padding: 5px 10px 5px !important;
-        margin: 5px;
-        border: 1px solid #eee;
+        padding: 5px !important;
+margin: 3px 15px;
+border: 1px solid #eee;
+min-width: 165px;
+overflow: hidden;
     }
 
     .cst-btn {
@@ -808,14 +777,14 @@ aside .btn-check:focus+.btn,
    .carousel-caption
    {display: none;}
    .rect-bg {
-    background-color: #636B82;
+       padding: 15px !important;
     color: #fff;
     /* background-image: url('../images/buy_ban.jpeg'); */
     background-repeat: no-repeat;
     height: auto;
     background-position: center center;
     background-origin: content-box;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     margin: 0;
    }
@@ -887,16 +856,38 @@ background-position: top center;
         background-size: contain;
 }
 
-#carousel .slides img {
-    max-width: 165px;
-    margin-right: 5px;
-    float: left;
-    display: block;
-    width: 100%;
-    border: 1px solid #C5C5C5;
+.prod-detail #slider img {
+    height: 100%;
+    -moz-user-select: none;
+    min-height: 235px;
+    border: 1px solid #eee;
+    margin: 0;
     overflow: hidden;
-    min-height: 115px;
 }
+.prod-detail #carousel
+{ 
+margin-top: -47px;
+}
+#carousel .slides img {
+    max-width: 160px;
+margin-left: 7px;
+float: left;
+display: block;
+width: 100%;
+border: 1px solid #C5C5C5;
+overflow: hidden;
+min-height: 115px;
+}
+.sel-buy_tab .px-5
+{
+    padding: 10px !important;
+}
+.owl-item
+{ 
+margin: 0 auto;
+width: 385px !important;
+}
+
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
