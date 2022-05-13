@@ -11,26 +11,27 @@
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/flexslider.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/modernizr.js"></script>
+  <!-- <script src="js/modernizr.js"></script> -->
   <script src="js/jquery.flexslider.js"></script>
   
   
 
   <script type="text/javascript">
 // $(window).load(function() {
-  $(document).ready(function () {
+  $.noConflict();
+  jQuery(document).ready(function () {
   // The slider being synced must be initialized first
-  $('#carousel').flexslider({
+  jQuery('#carousel').flexslider({
     animation: "slide",
     controlNav: false,
     animationLoop: true,
     slideshow: true,
-    itemWidth: 210,
+    itemWidth: 182,
     itemMargin: 25,
     asNavFor: '#slider'
   });
  
-  $('#slider').flexslider({
+  jQuery('#slider').flexslider({
     animation: "slide",
     controlNav: false,
     animationLoop: true,
@@ -100,6 +101,7 @@
       <div class="col-lg-9 pe-xl-5">
 <!--featured image start -->
 <!-- Place somewhere in the <body> of your page -->
+  <section class="prod-detail">
   <div id="slider" class="flexslider">
     <ul class="slides">
       <li>
@@ -146,6 +148,7 @@
       <!-- items mirrored twice, total of 12 -->
     </ul>
   </div>
+  </section>
 <!--featured image end -->
        
 
